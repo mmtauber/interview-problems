@@ -1,0 +1,4 @@
+Main method is the testing ground for all problem classes. Modify the main method as needed for the desired problem.
+
+CONSTELLATION PROBLEM:
+	A 2D matrix needs to be created of type 'StarPoint' create a new star point in each element. The empty constructor defaults the star point to an empty space (i.e. no star). The constructor with a boolean parameter is meant to only take 'true' as the empty constructor defaults the space to 'false' (no star). Any star points that have a star and are adjacent to another star (diagnols count) are considered to be one 'grouping' or constellation. The example provided has stars in the four corners of a 3 x 3 array. This will return a result of 4 separate constellations. Adding a star in the middle will connect all other stars leaving the total constellation count at one.
