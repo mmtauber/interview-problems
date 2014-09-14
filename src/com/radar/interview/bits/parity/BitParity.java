@@ -8,7 +8,7 @@ public class BitParity {
     public static boolean isOddParity(int num) {
         boolean isOdd = false;
 
-        while (num > 0) {
+        while (num != 0) {
 
             // Check LSB
             if ( (num & 1) != 0) {
