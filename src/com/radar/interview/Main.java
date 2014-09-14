@@ -1,20 +1,22 @@
 package com.radar.interview;
 
 import com.radar.interview.problem.constellation.StarGroupFinder;
-import com.radar.interview.problem.constellation.StarPoint;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        StarPoint[][] starMap = new StarPoint[][] {
-                new StarPoint[] { new StarPoint(true), new StarPoint(), new StarPoint(true) },
-                new StarPoint[] { new StarPoint(), new StarPoint(true), new StarPoint() },
-                new StarPoint[] { new StarPoint(true), new StarPoint(), new StarPoint(true) }
+        boolean[][] starMap = new boolean[][] {
+                new boolean[] { true, false, true },
+                new boolean[] { false, false, false },
+                new boolean[] { true, false, true },
+                new boolean[] { false, true, false },
+                new boolean[] { false, true, false },
+                new boolean[] { false, true, false }
         };
 
         StarGroupFinder starGroupFinder = new StarGroupFinder(starMap);
 
-        System.out.println("Total groups: " + starGroupFinder.search());
+        System.out.println("Total groups: " + starGroupFinder.search(starMap.length, starMap[0].length));
     }
 }
