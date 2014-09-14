@@ -6,14 +6,20 @@ package com.radar.interview.bits.parity;
 public class BitParity {
 
     public static boolean isOddParity(int num) {
-        int bitCount = 0;
+        boolean isOdd = false;
 
-        for (int i = 0; i < 32; i++, num >>>= 1) {
+        while (num > 0) {
+
+            // Check LSB
             if ( (num & 1) != 0) {
-                bitCount++;
+                isOdd = !isOdd;
             }
+
+            // Shift current LSB out
+            num >>>= 1;
+
         }
 
-        return ( bitCount & 1 ) != 0;
+        return isOdd;
     }
 }
