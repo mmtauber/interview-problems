@@ -16,17 +16,22 @@ public class StarGroupFinder {
     }
 
 
-    public int search(int lengthForX, int lengthForY) {
+    public int search() {
+
+        if (map == null || map.length <= 0 || map[0].length < 0) {
+            throw new IllegalArgumentException("WTF.");
+        }
+
+        int lengthForX = map.length;
+        int lengthForY = map[0].length;
 
         // Init seenMap with 'false'
         // **boolean primitive defaults to 'false'
-        boolean[][] array = new boolean[lengthForX][lengthForY];
+        seenMap = new boolean[lengthForX][lengthForY];
 
-        for (int i = lengthForX; i < lengthForX; i++) {
-            array[i] = new boolean[lengthForY];
+        for (int i = 0; i < lengthForY; i++) {
+            seenMap[i] = new boolean[lengthForY];
         }
-
-        seenMap = array;
 
         for (int i = 0; i < map.length; i++) {
 

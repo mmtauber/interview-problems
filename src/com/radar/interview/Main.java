@@ -11,12 +11,12 @@ public class Main {
                 new boolean[] { false, false, false },
                 new boolean[] { true, false, true },
                 new boolean[] { false, true, false },
-                new boolean[] { false, true, false },
-                new boolean[] { false, true, false }
+                new boolean[] { false, false, false },
+                new boolean[] { true, true, false }
         };
 
         StarGroupFinder starGroupFinder = new StarGroupFinder(starMap);
 
-        System.out.println("Total groups: " + starGroupFinder.search(starMap.length, starMap[0].length));
+        System.out.println("Total groups: " + starGroupFinder.search());
     }
 }
