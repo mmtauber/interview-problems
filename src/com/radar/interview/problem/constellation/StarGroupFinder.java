@@ -1,9 +1,11 @@
 package com.radar.interview.problem.constellation;
 
+import com.radar.interview.InterviewProblem;
+
 /**
  * Created by mark on 9/9/14.
  */
-public class StarGroupFinder {
+public class StarGroupFinder implements InterviewProblem {
 
     private int total = 0;
 
@@ -98,5 +100,21 @@ public class StarGroupFinder {
 
     public void setTotal(int total) {
         this.total = total;
+    }
+
+    @Override
+    public void runExample() {
+        boolean[][] starMap = new boolean[][] {
+                new boolean[] { true, false, true },
+                new boolean[] { false, false, false },
+                new boolean[] { true, false, true },
+                new boolean[] { false, true, false },
+                new boolean[] { false, false, false },
+                new boolean[] { true, true, false }
+        };
+
+        StarGroupFinder starGroupFinder = new StarGroupFinder(starMap);
+
+        System.out.println("Total groups: " + starGroupFinder.search());
     }
 }
