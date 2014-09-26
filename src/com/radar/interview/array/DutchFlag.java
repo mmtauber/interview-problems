@@ -6,33 +6,21 @@ package com.radar.interview.array;
 public class DutchFlag {
 
     int[] array;
-    int lowIndex;
+    int lowIndex = 0;
+    int midIndex = 0;
     int highIndex;
 
     public int[] arrange(int[] array, int pivot) {
 
         this.array = array;
-        lowIndex = 0;
 
-        // High index is equal pivot plus one unless the pivot is at the end of
-        // the array, then it is equal to the pivot.
-        highIndex = ( pivot == array.length - 1 ? pivot : pivot + 1 );
+        highIndex = array.length - 1;
 
         int pivotVal = array[pivot];
 
         for (int i = 0; i < array.length; i++) {
 
-            if (array[lowIndex] < pivotVal) {
-                lowIndex++;
-                continue;
-            } else if (array[lowIndex] > pivotVal) {
-                swap(lowIndex, highIndex);
-                lowIndex++;
-                highIndex++;
-                continue;
-            } else if (array[lowIndex] == pivotVal) {
-                
-            }
+
 
         }
 
