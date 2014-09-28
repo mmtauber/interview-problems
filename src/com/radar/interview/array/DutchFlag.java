@@ -1,16 +1,18 @@
 package com.radar.interview.array;
 
+import com.radar.interview.InterviewProblem;
+
 /**
  * @author mtauber
  */
-public class DutchFlag {
+public class DutchFlag implements InterviewProblem {
 
     int[] array;
     int lowIndex = 0;
     int midIndex = 0;
     int highIndex;
 
-    public int[] arrange(int[] array, int pivot) {
+    public void arrange(int[] array, int pivot) {
 
         this.array = array;
 
@@ -18,14 +20,35 @@ public class DutchFlag {
 
         int pivotVal = array[pivot];
 
+        System.out.print("\nARRAY BEFORE: ");
         for (int i = 0; i < array.length; i++) {
-
-
-
+            System.out.print(array[i] + " ");
         }
 
+        while (midIndex < array.length) {
 
-        return new int[1];
+            // If the high index has met the mid index we can exit earlier
+            if (highIndex < midIndex) {
+                break;
+            }
+
+            if (array[midIndex] < pivotVal) {
+                swap(lowIndex, midIndex);
+                lowIndex++;
+                midIndex++;
+            } else if (array[midIndex] > pivotVal) {
+                swap(midIndex, highIndex);
+                highIndex--;
+            } else {
+                midIndex++;
+            }
+        }
+
+        System.out.print("\nARRAY AFTER: ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.print("\n");
     }
 
     private void swap(int i, int j) {
@@ -34,5 +57,11 @@ public class DutchFlag {
         temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+
+    @Override
+    public void runExample() {
+        int[] testArray = new int[]{ 9, 9, 3, 6, 9, 6, 9, 3, 9, 3, 6, 3, 3 };
+        new DutchFlag().arrange(testArray, 3);
     }
 }
