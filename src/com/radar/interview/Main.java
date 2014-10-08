@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.array.DutchFlag;
+import com.radar.interview.array.RemoveDuplicates;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new DutchFlag().runExample();
+        new RemoveDuplicates().runExample();
     }
 }
