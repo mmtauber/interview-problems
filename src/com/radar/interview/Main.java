@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.array.RemoveDuplicates;
+import com.radar.interview.array.RobotBattery;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new RemoveDuplicates().runExample();
+        new RobotBattery().runExample();
     }
 }
