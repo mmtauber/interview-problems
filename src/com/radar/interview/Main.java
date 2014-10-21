@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.array.LongestSubArray;
+import com.radar.interview.string.StringToInt;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new LongestSubArray().runExample();
+        new StringToInt().runExample();
     }
 }
