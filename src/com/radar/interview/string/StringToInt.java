@@ -58,20 +58,51 @@ public class StringToInt implements InterviewProblem {
 
     }
 
-    public void intToString(int[] array, int value) {
+    public void intToString(int value) {
 
-        System.out.print("\nARRAY BEFORE: ");
-        for (int p = 0; p < array.length; p++) {
-            System.out.print(array[p] + " ");
+        StringBuilder answer = new StringBuilder();
+        
+        boolean isNeg = ( value < 0 );
+
+        while (value != 0) {
+
+            switch (Math.abs(value % 10)) {
+                case 0:
+                    answer.insert(0, '0');
+                    break;
+                case 1:
+                    answer.insert(0, '1');
+                    break;
+                case 2:
+                    answer.insert(0, '2');
+                    break;
+                case 3:
+                    answer.insert(0, '3');
+                    break;
+                case 4:
+                    answer.insert(0, '4');
+                    break;
+                case 5:
+                    answer.insert(0, '5');
+                    break;
+                case 6:
+                    answer.insert(0, '6');
+                    break;
+                case 7:
+                    answer.insert(0, '7');
+                    break;
+                case 8:
+                    answer.insert(0, '8');
+                    break;
+                case 9:
+                    answer.insert(0, '9');
+                    break;
+            }
+            value = value / 10;
         }
-        System.out.print("\n");
 
-
-        System.out.print("\nARRAY AFTER:  ");
-        for (int q = 0; q < array.length; q++) {
-            System.out.print(array[q] + " ");
-        }
-
+        System.out.println("Answer is: " + ( isNeg ? answer.insert(0, '-').toString() :
+                                            answer.toString()));
     }
 
     @Override
@@ -80,5 +111,8 @@ public class StringToInt implements InterviewProblem {
         stringToInt("-1002");
         stringToInt("100100100");
 
+        intToString(100034);
+        intToString(-100034);
+        intToString(1112109000);
     }
 }
