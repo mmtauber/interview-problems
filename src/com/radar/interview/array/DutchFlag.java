@@ -29,7 +29,7 @@ public class DutchFlag implements InterviewProblem {
 
             // If the high index has met the mid index we can exit earlier
             if (highIndex < midIndex) {
-                break;
+                    break;
             }
 
             if (array[midIndex] < pivotVal) {
