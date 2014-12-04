@@ -1,6 +1,6 @@
-package com.radar.interview.bits.tenMillionBits;
+package com.radar.infinity_zero.bits.tenMillionBits;
 
-import com.radar.interview.InterviewProblem;
+import com.radar.infinity_zero.InterviewProblem;
 
 import java.util.Random;
 

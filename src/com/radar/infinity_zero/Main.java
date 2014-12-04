@@ -1,6 +1,6 @@
-package com.radar.interview;
+package com.radar.infinity_zero;
 
-import com.radar.interview.string.RomanNumerals;
+import com.radar.infinity_zero.string.RomanNumerals;
 
 public class Main {
 

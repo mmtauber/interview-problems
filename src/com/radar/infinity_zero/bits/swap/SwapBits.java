@@ -1,6 +1,6 @@
-package com.radar.interview.bits.swap;
+package com.radar.infinity_zero.bits.swap;
 
-import com.radar.interview.InterviewProblem;
+import com.radar.infinity_zero.InterviewProblem;
 
 /**
  * @author mtauber

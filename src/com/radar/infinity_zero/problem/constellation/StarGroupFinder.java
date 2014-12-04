@@ -1,6 +1,6 @@
-package com.radar.interview.problem.constellation;
+package com.radar.infinity_zero.problem.constellation;
 
-import com.radar.interview.InterviewProblem;
+import com.radar.infinity_zero.InterviewProblem;
 
 /**
  * Created by mark on 9/9/14.

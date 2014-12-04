@@ -1,6 +1,6 @@
-package com.radar.interview.bits.parity;
+package com.radar.infinity_zero.bits.parity;
 
-import com.radar.interview.InterviewProblem;
+import com.radar.infinity_zero.InterviewProblem;
 
 /**
  * @author mtauber

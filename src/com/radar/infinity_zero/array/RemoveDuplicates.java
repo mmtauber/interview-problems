@@ -1,6 +1,6 @@
-package com.radar.interview.array;
+package com.radar.infinity_zero.array;
 
-import com.radar.interview.InterviewProblem;
+import com.radar.infinity_zero.InterviewProblem;
 
 /**
  * @author mtauber

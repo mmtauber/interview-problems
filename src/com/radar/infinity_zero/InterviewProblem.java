@@ -1,4 +1,4 @@
-package com.radar.interview;
+package com.radar.infinity_zero;
 
 /**
  * @author mtauber
