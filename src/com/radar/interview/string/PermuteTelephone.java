@@ -35,6 +35,6 @@ public class PermuteTelephone implements InterviewProblem {
 
     @Override
     public void runExample() {
-        permuteTelephone("480243577");
+        permuteTelephone("480351566");
     }
 }

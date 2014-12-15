@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.linkedList.ReverseList;
+import com.radar.interview.linkedList.ReverseListByIndexes;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new ReverseList().runExample();
+        new ReverseListByIndexes().runExample();
     }
 }
