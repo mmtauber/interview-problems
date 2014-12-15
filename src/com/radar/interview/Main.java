@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.linkedList.DetectCycle;
+import com.radar.interview.linkedList.CyclicalShift;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new DetectCycle().runExample();
+        new CyclicalShift().runExample();
     }
 }
