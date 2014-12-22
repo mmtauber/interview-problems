@@ -7,7 +7,9 @@ import com.radar.interview.dataStructures.Node;
 /**
  * Created by mark on 12/12/14.
  *
- * Remove the node that is k nodes from the last node in the list.
+ * Any node shifted "out" of the list must move to the front.
+ *
+ * Ex. 1 2 3 (Shift 2) = 2 3 1
  *
  */
 public class CyclicalShift implements InterviewProblem {
