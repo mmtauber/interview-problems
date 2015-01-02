@@ -37,4 +37,12 @@ public class Stack<T> {
 
         return this.top == -1;
     }
+
+    public void printBackwards() {
+        if (!isEmpty()) {
+            T val = this.pop();
+            printBackwards();
+            System.out.print(val + " ");
+        }
+    }
 }

@@ -3,13 +3,13 @@ package com.radar.interview.dataStructures;
 /**
  * @author mtauber
  */
-public class Node {
+public class Node<T> {
 
     private Node next;
-    private int value;
+    private T value;
 
-    public Node(int num) {
-        value = num;
+    public Node(T val) {
+        value = val;
     }
 
     public Node getNext() {
@@ -20,11 +20,11 @@ public class Node {
         this.next = next;
     }
 
-    public int getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(T value) {
         this.value = value;
     }
 }

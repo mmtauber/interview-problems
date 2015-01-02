@@ -1,4 +1,4 @@
-package com.radar.interview.stack;
+package com.radar.interview.stackQueue;
 
 import com.radar.interview.InterviewProblem;
 import com.radar.interview.dataStructures.Stack;

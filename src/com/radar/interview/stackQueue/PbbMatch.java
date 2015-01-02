@@ -1,4 +1,4 @@
-package com.radar.interview.stack;
+package com.radar.interview.stackQueue;
 
 import com.radar.interview.InterviewProblem;
 import com.radar.interview.dataStructures.Stack;
@@ -55,7 +55,6 @@ public class PbbMatch implements InterviewProblem {
 
     @Override
     public void runExample() {
-]
         String input = "{([])}";
 
         System.out.print("\nANSWER: " + pbbMatch(input));
