@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.stackQueue.PathName;
+import com.radar.interview.stackQueue.InOrderTreeTraversal;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new PathName().runExample();
+        new InOrderTreeTraversal().runExample();
     }
 }

@@ -21,7 +21,6 @@ public class Stack<T> {
     public T pop() {
 
         T value = stack.get(this.top);
-        //stack[this.top] = 0;
         stack.remove(this.top);
         this.top--;
 
