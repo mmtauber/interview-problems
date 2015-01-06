@@ -52,21 +52,43 @@ public class InOrderTreeTraversal implements InterviewProblem {
 
     }
 
+    public void inOrderTreeTraversalByTheBook(BinaryTreeNode<Integer> tree) {
+
+        Stack<BinaryTreeNode> stack = new Stack<>();
+        BinaryTreeNode current = tree;
+
+        while ( ! stack.isEmpty() || current != null) {
+            if (current != null) {
+                stack.push(current);
+                current = current.getLeft();
+            } else {
+                current = stack.peek();
+                stack.pop();
+
+                // Print current
+                System.out.print("\nVal: " + current.getValue());
+                current = current.getRight();
+            }
+        }
+
+    }
+
     @Override
     public void runExample() {
 
         BinaryTreeNode<Integer> tree = new BinaryTreeNode<>(10);
         tree.setLeft(7);
         tree.setRight(11);
-        tree.getLeft().setLeft(6);
+        tree.getLeft().setLeft(5);
         tree.getLeft().getLeft().setLeft(1);
-        tree.getLeft().getLeft().setRight(8);
-        tree.getLeft().getLeft().getRight().setLeft(2);
-        tree.getLeft().getLeft().getRight().setRight(9);
+        tree.getLeft().getLeft().setRight(6);
+        tree.getLeft().getLeft().getRight().setLeft(4);
+        tree.getLeft().getLeft().getRight().setRight(7);
 
         tree.getRight().setRight(12);
 
 
         inOrderTreeTraversal(tree);
+        inOrderTreeTraversalByTheBook(tree);
     }
 }
