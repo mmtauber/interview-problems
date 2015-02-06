@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.stackQueue.InOrderTreeTraversal;
+import com.radar.interview.bst.FindLargestKNodes;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new InOrderTreeTraversal().runExample();
+        new FindLargestKNodes().runExample();
     }
 }
