@@ -6,6 +6,7 @@ package com.radar.interview.dataStructures;
 public class Node<T> {
 
     private Node next;
+    private Node prev;
     private T value;
 
     public Node(T val) {
@@ -26,5 +27,13 @@ public class Node<T> {
 
     public void setValue(T value) {
         this.value = value;
+    }
+
+    public Node getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node prev) {
+        this.prev = prev;
     }
 }

@@ -46,6 +46,7 @@ public class LinkedList<T> {
                 }
 
                 next.setNext(node);
+                node.setPrev(next);
             } else {
                 head = node;
             }
