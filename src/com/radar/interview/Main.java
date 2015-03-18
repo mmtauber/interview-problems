@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.linkedList.Palindrome;
+import com.radar.interview.recursion.StringPermutation;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new Palindrome().runExample();
+        new StringPermutation().runExample();
     }
 }
