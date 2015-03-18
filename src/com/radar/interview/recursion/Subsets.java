@@ -38,6 +38,11 @@ public class Subsets implements InterviewProblem {
 
     @Override
     public void runExample() {
+        ArrayList<Integer> set = new ArrayList<>();
+        set.add(0);
+        set.add(1);
+        set.add(2);
+        getSubsets(set, 0);
 
     }
 }

@@ -1,12 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.bst.DoubleLinkedListToBST;
-import com.radar.interview.recursion.StringPermutation;
+import com.radar.interview.recursion.Subsets;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new StringPermutation().runExample();
+        new Subsets().runExample();
     }
 }
