@@ -63,6 +63,6 @@ public class RegexMatcher implements InterviewProblem {
 
     @Override
     public void runExample() {
-        System.out.println(match(".bc".toCharArray(), "qbc".toCharArray()));
+        System.out.println(match(".bc*t".toCharArray(), "qbc".toCharArray()));
     }
 }
