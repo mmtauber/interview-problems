@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.recursion.StringPermutation;
+import com.radar.interview.regex.RegexMatcher;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new StringPermutation().runExample();
+        new RegexMatcher().runExample();
     }
 }

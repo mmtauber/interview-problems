@@ -17,7 +17,7 @@ public class Subsets implements InterviewProblem {
 
         if (set.size() == index) {
             allsubsets = new ArrayList<>();
-            allsubsets.add(new ArrayList<>());
+            allsubsets.add(new ArrayList<Integer>());
         } else {
             allsubsets = getSubsets(set, index + 1);
             int item = set.get(index);
