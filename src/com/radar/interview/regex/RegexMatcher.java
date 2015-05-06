@@ -15,6 +15,7 @@ public class RegexMatcher implements InterviewProblem {
         int i = 0;
         int j = 0;
 
+        // Anchor char: the regex must match from the beginning of the string
         if (regex[0] == '^') {
             return matchHere(regex, text, i + 1, j);
         }
@@ -38,7 +39,7 @@ public class RegexMatcher implements InterviewProblem {
             return matchStar(regex[i], regex, text, i + 2, j);
         }
 
-        if (regex[i] == '$' && regex[i + 1] == regex.length) {
+        if (regex[i] == '$' && i + 1 == regex.length) {
             return j == text.length ? 1 : 0;
         }
 
@@ -63,6 +64,6 @@ public class RegexMatcher implements InterviewProblem {
 
     @Override
     public void runExample() {
-        System.out.println(match(".bc*t".toCharArray(), "qbc".toCharArray()));
+        System.out.println(match("c".toCharArray(), "qbc".toCharArray()));
     }
 }

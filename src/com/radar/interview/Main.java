@@ -1,11 +1,11 @@
 package com.radar.interview;
 
-import com.radar.interview.regex.RegexMatcher;
+import com.radar.interview.graph.GoogleEncode;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new RegexMatcher().runExample();
+        new GoogleEncode().runExample();
     }
 }
