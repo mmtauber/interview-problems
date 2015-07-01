@@ -6,6 +6,10 @@ import com.radar.interview.dataStructures.Stack;
 
 /**
  * @author mtauber
+ *
+ * !!Sub-optimal!! refer to http://stackoverflow.com/questions/12700621/i-am-trying-
+ *   to-implement-inorder-traversal-for-bst-using-iterative-approach-usin/12718147#12718147
+ *
  */
 public class InOrderTreeTraversal implements InterviewProblem {
 

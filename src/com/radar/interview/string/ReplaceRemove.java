@@ -14,11 +14,7 @@ public class ReplaceRemove implements InterviewProblem {
 
     public void replaceRemove(char[] input) {
 
-
         System.out.println("Answer is: ");
-
-
-
     }
 
     //

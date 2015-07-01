@@ -60,12 +60,9 @@ public class GoogleEncode implements InterviewProblem {
         int j;
         
         while (i < str.length() - 1) {
+
             List<Edge> curEdges = results.get(i).edges;
             j = i + 2;
-
-            /*for (j = i + 1; j < str.length(); j++) {
-                curEdges.add(results.get(j))
-            }        */
 
             while (j < str.length()) {
                 curEdges.add(new Edge(results.get(j), j - i - 1));

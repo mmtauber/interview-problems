@@ -1,4 +1,4 @@
-package com.radar.interview.problem.constellation;
+package com.radar.interview.constellation;
 
 import com.radar.interview.InterviewProblem;
 
@@ -105,12 +105,12 @@ public class StarGroupFinder implements InterviewProblem {
     @Override
     public void runExample() {
         boolean[][] starMap = new boolean[][] {
-                new boolean[] { true, false, true },
-                new boolean[] { false, false, false },
-                new boolean[] { true, false, true },
-                new boolean[] { false, true, false },
-                new boolean[] { false, false, false },
-                new boolean[] { true, true, false }
+                 { true, false, true },
+                 { false, false, false },
+                 { true, false, true },
+                 { false, true, false },
+                 { false, false, false },
+                 { true, true, false }
         };
 
         StarGroupFinder starGroupFinder = new StarGroupFinder(starMap);

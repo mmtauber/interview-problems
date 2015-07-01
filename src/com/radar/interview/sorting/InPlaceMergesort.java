@@ -9,13 +9,13 @@ public class InPlaceMergesort implements InterviewProblem {
     private int[] numbers;
     private int[] helper;
 
-    private int number;
+    private int length;
 
     public void sort(int[] values) {
         this.numbers = values;
-        number = values.length;
-        this.helper = new int[number];
-        mergesort(0, number - 1);
+        length = values.length;
+        this.helper = new int[length];
+        mergesort(0, length - 1);
     }
 
     private void mergesort(int low, int high) {

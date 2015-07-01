@@ -27,7 +27,7 @@ public class StringCombonation implements InterviewProblem {
             outStr.setLength(outStr.length() - 1);
         }
 
-        /* Using loop partioning we can eliminate the if-statement above.
+        /* Using loop partitioning we can eliminate the if-statement above.
             This doesn't make a huge difference here, but it is worth noting.
          */
 //        int i = 0;
